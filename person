@@ -1,0 +1,28 @@
+package Add;
+
+public class Person {
+	String name;
+	int age; // global variable 
+	Person(String name, int age){
+		this.name = name;
+		this.age = age;
+		
+	}
+	
+	void Displaydetails() {
+		System.out.println("name:" + name);
+		System.out.println("age :" + age);
+		
+	}
+	
+	public static void main(String[] args) {
+		Person p1 = new Person("Arti",22);
+		Person p2 = new Person("sham",24);
+		p1.Displaydetails();
+		p2.Displaydetails();
+		
+		
+
+	}
+
+}
