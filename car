@@ -1,0 +1,19 @@
+package Add;
+
+public class Car {
+	void start() {
+		System.out.println("Car is starting");
+	}
+	static void  CarCompanyName() {
+		System.out.println("Name of Car company  Maruti Suzuki");
+	}
+
+	public static void main(String[] args) {
+		Car car = new Car();
+		car.start();
+		car.CarCompanyName();
+		
+
+	}
+
+}
