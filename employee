@@ -1,0 +1,42 @@
+package com.demo;
+import java.util.Scanner;
+public class Employee {
+	static String CompanyName;
+	String EmployeeName ;
+	int Salary ;
+	int Employeeid;
+	
+	static {
+		CompanyName = "Tata Motors";
+	}
+	Employee( String Employeename, int Salary, int Employeeid){
+		this.EmployeeName= Employeename;
+		this.Salary = Salary;
+		this.Employeeid = Employeeid;
+	}
+	void DisplayDetails() {
+		System.out.println(" company name:" + CompanyName);
+		System.out.println(" Employee name: " + EmployeeName);
+		System.out.println(" Employee Salary:" + Salary);
+		System.out.println(" Employeeid:"+ Employeeid);
+		
+		
+		
+	}
+	public static void main (String[] args) {
+		Scanner sc = new Scanner(System.in);
+		System.out.println("Employee name ");
+		String EmployeeName = sc.nextLine();
+		System.out.println(" Employee Salary");
+		int Salary = sc.nextInt();
+		System.out.println(" Employee id");
+		int Employeeid = sc.nextInt();
+		Employee e1  = new Employee(EmployeeName, Salary, Employeeid);
+		e1.DisplayDetails();
+		sc.close();
+		
+		
+	}
+	
+
+}
