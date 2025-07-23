@@ -1,0 +1,16 @@
+package pqr;
+public class Area {
+	
+	public static void main(String[] args) {
+		final float pi = 3.14f;
+		double radius = 5;
+		double areaofcircle = pi*radius*radius;
+		double areaoftriangle = 0.5*radius*radius;
+		System.out.println("area of circle is :" + areaofcircle);
+		System.out.println("area of triangle:"+ areaoftriangle);
+
+	
+		
+	}
+
+}
