@@ -1,0 +1,27 @@
+package pqr;
+
+public class Car {
+	final  int MAX_SPEED = 200;
+	String ModelName;
+	int Speed;
+	Car(String ModelName, int Speed) 
+	{
+		this.ModelName = ModelName;
+		this.Speed = Speed;
+	}
+	void Checkcarspeed() {
+		if (Speed> MAX_SPEED) {
+			System.out.println(ModelName +"is over-speeding");
+			
+		}
+		else {
+			System.out.println(ModelName + " is within speed limit ");
+			}
+		}
+
+	public static void main(String[] args) {
+		Car c1 = new Car ("HeroHond", 220);
+		c1.Checkcarspeed();
+	}
+
+}
