@@ -1,16 +1,30 @@
 package pqr;
 public class Area {
+	final float pi = 3.14f;
+	double radius;
+	double areaofcircle;
+	double areaoftriangle;
+	void Accept(double a) {
+		radius = a;
+		 areaofcircle = pi*radius*radius;
+		 areaoftriangle = 0.5*radius*radius;
+	}
+	
 	
 	public static void main(String[] args) {
-		final float pi = 3.14f;
-		double radius = 5;
-		double areaofcircle = pi*radius*radius;
-		double areaoftriangle = 0.5*radius*radius;
-		System.out.println("area of circle is :" + areaofcircle);
-		System.out.println("area of triangle:"+ areaoftriangle);
+		Area a1 = new Area();
+		  a1.Accept(4.6);
+      System.out.println("area of circle is :" + a1.areaofcircle);
+	  System.out.println("area of triangle:"+ a1.areaoftriangle);
+	 
 
 	
 		
 	}
 
 }
+
+		
+	
+
+
